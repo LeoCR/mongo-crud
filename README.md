@@ -1,2 +1,3 @@
 # mongo-crud
-Nodejs + MongoDB
+### Nodejs + MongoDB
+This is a simple CRUD with Mongo and Nodejs
