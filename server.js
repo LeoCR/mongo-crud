@@ -59,6 +59,14 @@ async function main(){
         assert(removed)
         const deletedItem=await circulationRepo.getById(addedItem._id);
         assert.equal(deletedItem,null);
+
+        const avgFinalists=await circulationRepo.averageFinalist();
+        console.log(avgFinalists);
+
+        const avgByChange=await circulationRepo.averageFinalistByChange();
+        console.log(avgByChange);
+        
+        
     } catch (error) {
         console.log("An error occurs");
         console.log(error);
